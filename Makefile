@@ -10,4 +10,4 @@ all: Vereinssatzung.pdf
 	pdflatex $(@:%.pdf=%.tex)
 
 clean:
-	rm -f *.aux *.dat *.log *.nav *.out *.snm *.toc *.vrb $(DOCNAME)*.pdf 
+	rm -f *.dat *.log *.nav *.out *.snm *.toc *.vrb $(DOCNAME)*.pdf 
