@@ -1,0 +1,79 @@
+\documentclass[draft]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+
+\usepackage{scrjura}
+\usepackage{paralist}
+\usepackage{eurosym}
+\usepackage{totpages}
+\usepackage{everyshi}
+\usepackage{keyval}
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{Entwurf 2014-05-18}
+%\SetWatermarkScale{3}
+%\SetWatermarkColor[gray]{0.95}
+
+\usepackage{totpages}
+\usepackage{scrpage2}
+\usepackage{titling}
+
+\usepackage{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+
+\frenchspacing
+
+\setkeys{contract}{preskip=2\parskip, postskip=\parskip}
+
+\KOMAoption{ref}{short,nosentence}
+
+\addtokomafont{title}{\rmfamily}
+\addtokomafont{section}{\rmfamily}
+\addtokomafont{contract.Paragraph}{\rmfamily}
+
+\newcommand{\VereinsName}{OpenStack DACH}
+
+\begin{document}
+
+\selectlanguage{german}
+
+\title{Beitragsordnung des Vereins "`\VereinsName\ [e.V.]"'}
+\date{}
+\author{}
+\def\fassungsdatum{17.\ Dezember 2014}
+
+\begin{center}
+  \LARGE \thetitle
+\end{center}
+
+\begin{flushright}
+  Fassung vom \fassungsdatum
+\end{flushright}
+
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ofoot{\footnotesize Seite \thepage\ von \pageref{TotPages}}
+
+\ihead{\footnotesize \thetitle}
+\ohead{\footnotesize Fassung vom \fassungsdatum}
+\begin{contract}
+
+\Paragraph{title=Grundsatz}
+
+Diese Beitragsordnung ist nicht Bestandteil der Satzung. Sie regelt die
+Beitragsverpflichtungen der Mitglieder sowie die Gebühren und Umlagen. 
+Sie kann nur von der Mitgliederversammlung des Vereins geändert werden.
+
+\Paragraph{title=Beiträge}
+
+Für natürliche Personen gilt ein Jahresbeitrag i.d.H.v. 60 \euro.
+
+Für Fördermitglieder gilt ein Jahresbeitrag i.d.H.v. 1800 \euro.
+
+\bigskip
+
+\end{contract}
+
+\end{document}

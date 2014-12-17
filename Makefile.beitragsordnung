@@ -1,0 +1,12 @@
+.PHONY : all clean
+.SECONDARY :
+
+DOCNAME ?= Beitragsordnung
+
+all: Beitragsordnung.pdf
+
+%.pdf: 
+	pdflatex $(@:%.pdf=%.tex)
+
+clean:
+	rm -f *.dat *.log *.nav *.out *.snm *.toc *.vrb $(DOCNAME)*.pdf 
